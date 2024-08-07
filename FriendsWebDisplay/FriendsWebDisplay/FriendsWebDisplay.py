@@ -1,14 +1,11 @@
 import json
 import pandas
-# Read and clean the lines from the file
-with open("FriendListIDS.txt", "r") as f:
-    lines = f.readlines()
 
-cleaned_lines = []
-for line in lines:
-    if 'u' in line:
-        index = line.index('u')  # Find the index of the first 'u'
-        cleaned_lines.append(line[index:].strip())  # Slice the line from the 'u' onward and strip whitespace
+f = open('usr_76e2aa13-2cbf-4cc2-861f-b11246832faf.json')
+data = json.load(f)
+friends_list = data.get('friends', [])
+print(friends_list)
+
 
 def add_user_friends_to_json(user_id, friends_list, json_file):
     try:
@@ -37,8 +34,3 @@ def add_user_friends_to_json(user_id, friends_list, json_file):
         with open(json_file, 'w') as f:
             json.dump(data, f, indent=4)
 
-# Check the first cleaned line for verification
-print(cleaned_lines[0])
-
-# Add user friends to JSON
-add_user_friends_to_json("test", cleaned_lines, "FriendListIDS.json")
