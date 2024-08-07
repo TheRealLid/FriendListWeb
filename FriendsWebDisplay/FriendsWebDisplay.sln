@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FriendsWebDisplay", "FriendsWebDisplay\FriendsWebDisplay.pyproj", "{C1373EA0-DD46-46C6-B32F-6A78F0588954}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1373EA0-DD46-46C6-B32F-6A78F0588954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1373EA0-DD46-46C6-B32F-6A78F0588954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B848FF8-DAF0-4928-93DC-29427410629E}
+	EndGlobalSection
+EndGlobal
